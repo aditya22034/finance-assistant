@@ -5,6 +5,25 @@
 - Run: `ollama run mistral`
 - Update `lang_agent` URLs in the code to point to your local Ollama (e.g. `localhost:11434`)
 
+---
+
+## ⚠️ Important: Running This App Locally with Full Functionality
+
+This Streamlit app (`https://finance-assistant-ieywnvvlgvapjvz6msdw3t.streamlit.app/`) is **UI-only** — backend services like voice recognition, LLM summarization, and TTS are not available in the hosted environment.
+
+To run the full assistant locally:
+
+### 🧱 Prerequisites
+
+1. **Install Docker & Docker Compose**
+2. **Install Ollama** and run `ollama run mistral`
+
+### 🚀 Start All Services
+
+Clone the repo and run:
+
+docker-compose up --build
+
 
 <!-- Finance Voice Assistant -->
 A modular, multi-agent voice assistant that provides a morning financial market brief using real-time data, document retrieval, and a locally hosted Large Language Model (LLM) via Ollama.
@@ -104,5 +123,7 @@ llm = ChatOllama(base_url="http://host.docker.internal:11434", model="mistral", 
 This uses host.docker.internal so that services running inside Docker can access the Ollama server running on your local machine.
 If you're not using Docker, change the URL to:
 base_url="http://localhost:11434"
+
+
 
 
