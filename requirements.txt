@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+requests
+yfinance
+beautifulsoup4
+langchain
+openai
+faiss-cpu
+sentence-transformers
+streamlit
+openai-whisper
+pyttsx3
+pydantic

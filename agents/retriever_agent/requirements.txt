@@ -1,0 +1,7 @@
+langchain
+openai
+faiss-cpu
+tiktoken
+uvicorn
+fastapi
+sentence-transformers

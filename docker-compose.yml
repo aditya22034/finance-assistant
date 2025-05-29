@@ -1,0 +1,51 @@
+
+version: "3.8"
+services:
+  api_agent:
+    build: ./agents/api_agent
+    ports:
+      - "8001:8001"
+    command: uvicorn main:app --host 0.0.0.0 --port 8001
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+  scraper_agent:
+    build: ./agents/scraper_agent
+    ports:
+      - "8002:8002"
+    command: uvicorn main:app --host 0.0.0.0 --port 8002
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+  retriever_agent:
+    build: ./agents/retriever_agent
+    ports:
+      - "8003:8003"
+    command: uvicorn main:app --host 0.0.0.0 --port 8003
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+  voice_agent:
+    build: ./agents/voice_agent
+    ports:
+      - "8004:8004"
+    command: uvicorn main:app --host 0.0.0.0 --port 8004
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+  lang_agent:
+    build: ./agents/lang_agent
+    ports:
+      - "8005:8005"
+    command: uvicorn main:app --host 0.0.0.0 --port 8005
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+  orchestrator:
+    build: ./agents/orchestrator
+    ports:
+      - "8000:8000"
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+  streamlit_app:
+    build: ./streamlit_app
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}

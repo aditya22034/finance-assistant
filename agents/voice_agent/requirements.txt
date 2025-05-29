@@ -1,0 +1,6 @@
+openai-whisper
+gtts
+pydub
+uvicorn
+fastapi
+python-multipart
