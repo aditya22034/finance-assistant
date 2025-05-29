@@ -1,3 +1,15 @@
+## 🎥 Demo Video (Watch This First!)
+
+🔗 [Click here to watch the full demo video](https://drive.google.com/file/d/1-xwKQ4mKdtxT80FnPW4khKFV0P6XkVgO/view?usp=sharing)
+
+> 💡 This video walks through:
+> - 🔊 Voice-to-text using Whisper
+> - 🧠 Query execution and summarization via LLM (Mistral on Ollama)
+> - 🤖 Full end-to-end conversation flow from voice input to AI-generated summary
+
+⚠️ Note: Full functionality requires local Ollama running. See setup instructions below.
+
+
 🚀 Deployed App: [Try it here](https://finance-assistant-ieywnvvlgvapjvz6msdw3t.streamlit.app/)
 
 🧠 Note: To get full functionality (voice-to-text, AI answers), clone this repo and:
