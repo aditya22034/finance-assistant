@@ -1,3 +1,11 @@
+🚀 Deployed App: [Try it here](https://finance-assistant-ieywnvvlgvapjvz6msdw3t.streamlit.app/)
+
+🧠 Note: To get full functionality (voice-to-text, AI answers), clone this repo and:
+- Install [Ollama](https://ollama.com/)
+- Run: `ollama run mistral`
+- Update `lang_agent` URLs in the code to point to your local Ollama (e.g. `localhost:11434`)
+
+
 <!-- Finance Voice Assistant -->
 A modular, multi-agent voice assistant that provides a morning financial market brief using real-time data, document retrieval, and a locally hosted Large Language Model (LLM) via Ollama.
 
